@@ -1,0 +1,31 @@
+body {
+width: max-content;
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Helvetica','Verdana',sans-serif;
+    line-height: 150%;
+    user-select: none;
+}
+
+.popup-title {
+    font-weight: 900;
+    background-color: rgba(0,0,0,0.75);
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-left: 1rem;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
