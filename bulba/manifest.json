@@ -1,11 +1,11 @@
 {
     "manifest_version": 3,
-    "name": "Pokémon Linker",
-    "description": "Changes the names of Pokémon to links to their Bulbapedia webpage.",
+    "name": "bulbasaur to bby",
+    "description": "Changes the instances of the word 'Bulbasaur' to 'bby'.",
     "version": "1.0",
     "action": {
         "default_popup": "popup/popup.html",
-        "default_icon": "pokeball.png"
+        "default_icon": "bulba-small-icon.png"
     },
     "permissions": [
         "storage"

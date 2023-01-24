@@ -1,9 +1,0 @@
-{
-    "manifest_version": 3,
-    "name": "BULBASAUR!",
-    "description": ":D",
-    "version": "1.0",
-    "action": {
-        "default_icon": "bulba-small-icon.png"
-    }
-}
