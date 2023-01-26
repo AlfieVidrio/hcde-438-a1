@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "bulbasaur to bby",
-    "description": "Changes the instances of the word 'Bulbasaur' to 'bby'.",
+    "description": "Changes the instances of the word 'Bulbasaur' to 'bby 🥹'.",
     "version": "1.0",
     "action": {
         "default_popup": "popup/popup.html",

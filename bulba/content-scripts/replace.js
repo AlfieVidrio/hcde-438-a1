@@ -1,21 +1,9 @@
 // Initialize the rules object and replace boolean
 let rules = {
-    bulbasaur: "bby",
+    bulbasaur: "bby 🥹",
+    Bulbasaur: "bby 🥹",
   };
 let replace = false;
-
-// // Get the rules key from Chrome storage, and assign its value to our rules
-// // object
-// chrome.storage.sync.get("rules", (items) => {
-//   rules = items.rules;
-// });
-
-// Add an onChange listener that updates the value of rules and re-runs
-// the replacement function
-// chrome.storage.onChanged.addListener((changes, areaName) => {
-//   rules = changes.rules.newValue;
-//   doReplacement();
-// });
 
 // Add a message listener that sets the value of "replace"
 chrome.runtime.onMessage.addListener((request) => {
@@ -24,9 +12,11 @@ chrome.runtime.onMessage.addListener((request) => {
 });
 
 // Checks the current value of replace and run walk nodes
+// method that controls "enable" button
 function doReplacement() {
     console.log("TESTINMGGGGGGG")
     console.log(rules);
+    console.log(replace)
   if (replace) {
     console.log("Replacing!");
     console.log(rules["bulbasaur"]);
@@ -67,7 +57,6 @@ function walkNodes(node, replacements) {
 // Uses a regular expression to replace text in a string
 function replaceAll(str, mapObj) {
   var re = new RegExp(Object.keys(mapObj).join("|"), "gi");
-//  console.log(mapObj)
   return str.replace(re, function (matched) {
     return mapObj[matched];
   });
@@ -75,8 +64,10 @@ function replaceAll(str, mapObj) {
 
 // Replaces the text inside a node using the replaceAll function
 function handleText(textNode, replacements) {
+    if (textNode.nodeValue.includes("Bulbasaur", 0)) {
+        console.log(textNode.nodeValue);
+    }
   textNode.nodeValue = replaceAll(textNode.nodeValue, replacements);
-//   console.log(replacements);
 }
 
 // Rverses the rules dictionary so we can undo replacements
