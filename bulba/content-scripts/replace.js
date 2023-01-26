@@ -63,7 +63,7 @@ function replaceAll(str, mapObj) {
 
 // Replaces the text inside a node using the replaceAll function
 function handleText(textNode, replacements) {
-    if (textNode.nodeValue.includes("Bulbasaur", 0)) {
+    if (textNode.nodeValue.includes("bulbasaur", 0)) {
         console.log(textNode.nodeValue);
     }
   textNode.nodeValue = replaceAll(textNode.nodeValue, replacements);
