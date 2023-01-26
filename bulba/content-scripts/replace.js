@@ -14,7 +14,6 @@ chrome.runtime.onMessage.addListener((request) => {
 // Checks the current value of replace and run walk nodes
 // method that controls "enable" button
 function doReplacement() {
-    console.log("TESTINMGGGGGGG")
     console.log(rules);
     console.log(replace)
   if (replace) {
